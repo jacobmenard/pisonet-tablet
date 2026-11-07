@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "pisonet-tablet",
+    "name": "Pisonet Tablet",
     "slug": "pisonet-tablet",
     "version": "1.0.0",
-    "orientation": "portrait",
+    "orientation": "landscape",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "userInterfaceStyle": "dark",
     "ios": {
       "supportsTablet": true
     },
@@ -16,10 +16,26 @@
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
       },
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.pisonet.tablet"
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/favicon.png",
+      "output": "single",
+      "bundler": "metro"
+    },
+    "plugins": [
+      [
+        "expo-router",
+        {
+          "asyncRoutes": false
+        }
+      ]
+    ],
+    "scheme": "pisonettablet",
+    "backgroundColor": "#0B1020",
+    "experiments": {
+      "typedRoutes": false
     }
   }
 }
